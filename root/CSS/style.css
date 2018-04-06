@@ -1,0 +1,146 @@
+/*
+ *
+ *  1) Overall Styles
+ *  2) 
+ *  ) Media-Queries
+
+ *  */
+
+/*  *
+--------------------------------------
+1) Overall Styles
+--------------------------------------*/
+    
+    html, body { background: rgb(175, 175, 255); }
+    
+    body {  color: #fff; font-family: 'Open Sans', Arial, sans-serif; line-height: 1.3; padding: 0; margin: 0; padding:35px 25px; }
+    
+    img { border: 0; max-width: 100%; display: block; }
+    
+    hr { background-color: #fff; height: 1px; border: 0; }
+    
+    b { font-weight: 700; }
+    
+    i { font-style: italic; }
+    
+    a { color: #fff; }
+    
+    h1 { margin:0 0 35px 0; font-weight: 300; font-size:40px; text-align: center; }
+    
+    .hide { display: none; }
+    
+    .center { margin: 0 auto; }
+    
+    .clearFix { clear: both; }
+    
+    .noUnderline { text-decoration: none; }
+    
+    .mobile { display: none; }
+    
+    .table { display: table; width: 100%; }
+    
+    .cell { display: table-cell; height: 100%; }
+    
+    .cell img { width: 100%; }
+    
+    
+    
+    .wrapper { max-width: 450px; margin: 0 auto; }
+    
+    
+/*  *
+--------------------------------------
+2) Abacus Container Styles
+--------------------------------------*/
+   
+   #abacusContainer { border:1px solid #fff; display:table; margin:0 auto; }
+   
+   .columnContainer { display:table-cell; width: 75px; padding:5px 0; position: relative; vertical-align: top; }
+   
+   .columnContainer > div {
+      position:relative;
+      z-index:100;
+   }
+   
+   .superBeadContainer { min-height:72px; padding:0 5px; overflow: auto; }
+   
+   .decimalSpace { border-top:1px solid #fff; border-bottom:1px solid #fff; height:3px; }
+   
+   .beadContainer { min-height:170px;  margin-top:2px; padding:6px 5px 0 5px; overflow: auto; }
+   
+   .bead { background-color:#fff; height: 30px; cursor: pointer; margin:3px 0;
+      
+      transition: margin .3s;
+      transition-timing-function: cubic-bezier(.86,0,.07,1);
+      
+      border-radius: 10px;
+      -moz-border-radius: 10px;
+      -webkit-border-radius: 10px;
+      
+      -webkit-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.35);
+      -moz-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.35);
+      box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.35);
+   }
+   
+   .super.bead { background-color:#f72727; margin:0; }
+   
+   .columnContainer > .bgLine { position: absolute; background-color:#fff; width:2px; margin:auto; left:0; right:0; top:0; bottom:0; height: 266px; z-index: 1;  }
+   
+   .decimal .decimalSpace { background-color:#f72727; }
+   
+   .bead1 { margin-top:36px; }
+
+/*  *
+--------------------------------------
+3) Controls Styles
+--------------------------------------*/
+
+#controlsContainer {
+   max-width:450px;
+   margin: 0 auto;
+   text-align: center;
+   font-size: 0;
+}
+
+.controlGroup {
+   display: inline-block;
+   padding:8px 15px;
+   font-size: 18px;
+   font-weight: 300;
+   text-transform: uppercase;
+   
+   -webkit-touch-callout: none; /* iOS Safari */
+   -webkit-user-select: none; /* Safari */
+   -khtml-user-select: none; /* Konqueror HTML */
+   -moz-user-select: none; /* Firefox */
+   -ms-user-select: none; /* Internet Explorer/Edge */
+   user-select: none;
+}
+
+#controlsContainer > div:first-child { border-right: 1px solid #fff; }
+
+.controlGroup > span {
+   display: inline-block; padding:0 5px; cursor: pointer;
+   border: 1px solid #fff;
+   transition: all .3s;
+}
+
+.controlGroup > span:hover,
+.controlGroup > span:active {
+   color: rgb(175, 175, 255);
+   background-color: #fff;
+}
+
+/*  *
+--------------------------------------
+) Media-Queries
+--------------------------------------*/
+
+
+@media all and (max-width: 375px) {
+    
+    
+}
+
+
+

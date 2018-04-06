@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Digital Soroban (Abacus)</title>
+    
+<link type="text/css" href="CSS/style.css" rel="stylesheet"/>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i" rel="stylesheet">
+
+</head>
+
+<body> 
+    
+    <h1>HTML SOROBAN</h1>
+    
+    <!-- element that will contain the abacus columns once the script runs -->
+    <div id="abacusContainer"></div>
+    
+    <div id="totalContainer">
+        <!-- element that will contain the total number when the script runs -->
+        <h1 id="totalHeadline"></h1>
+    </div>
+    
+    <div id="controlsContainer">
+        <div id="numeralControls" class="controlGroup">
+            <span id="addNumeral">+</span> Numeral <span id="removeNumeral">&ndash;</span>
+        </div>
+        
+        <div id="decimalControls" class="controlGroup">
+            <span id="addDecimal">+</span> Decimal <span id="removeDecimal">&ndash;</span>
+        </div>
+    </div>
+    
+    <!-- element that serves as the template HTML for a column within the abacus, will be removed by javascript -->
+    <div id="exampleColumnHTML">
+            <div class="bgLine"></div>
+            
+            <div class="superBeadContainer">
+                <div class="bead super"></div>
+            </div>
+            
+            <div class="decimalSpace"></div>
+            
+            <div class="beadContainer">
+                <div class="bead bead1"></div>
+                <div class="bead bead2"></div>
+                <div class="bead bead3"></div>
+                <div class="bead bead4"></div>
+            </div>
+    </div>
+    
+<script type="text/javascript" src="JS/script.js"></script>
+</body>
+</html>
